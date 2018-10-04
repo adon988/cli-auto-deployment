@@ -1,0 +1,35 @@
+"第一行必須設置這個才會正常生效
+set nocompatible
+
+" 設置 vundle {
+    filetype off
+    set rtp+=~/.vim/bundle/Vundle.vim
+    call vundle#begin()
+" }
+
+" 設置套件 {
+    Plugin 'VundleVim/Vundle.vim'             "預設必須
+    Plugin 'flazz/vim-colorschemes'           "顏色配置
+    Plugin 'godlygeek/tabular'                "排版
+    Plugin 'terryma/vim-multiple-cursors'     "多游標
+    Plugin 'vim-airline/vim-airline'          "下方指示列套件
+    Plugin 'vim-airline/vim-airline-themes'   "下方指示列外觀設置
+    Plugin 'mbbill/undotree'                  "undo 歷史樹
+    Plugin 'nathanaelkane/vim-indent-guides'  "排版標記
+" }
+
+" autocomplete {
+    Plugin 'honza/vim-snippets'               " vim-snippets
+    Plugin 'scrooloose/nerdcommenter'         " 快速處理註解
+" }
+
+" PHP {
+    Plugin 'sniphpets/sniphpets'              " php snippets
+    Plugin 'arnaud-lb/vim-php-namespace'      " php namespace
+" }
+
+" markdown {
+    Plugin 'tpope/vim-markdown'               " markdown
+" }
+
+call vundle#end()

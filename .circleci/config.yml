@@ -1,0 +1,11 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: debian:8-slim
+    environment:
+      TERM: xterm 
+    steps:
+      - checkout
+      - run: apt-get update && apt-get install -y sudo curl git vim
+      - run: sudo su -c 'bash <(curl https://bit.ly/flamerecca-vim -L)'
